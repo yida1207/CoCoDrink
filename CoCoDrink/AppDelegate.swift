@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //設定tabBarItem字型大小
+        let tabTitleAttributes:[NSAttributedString.Key:Any] = [.font:UIFont.systemFont(ofSize: 15)]
+        UITabBarItem.appearance().setTitleTextAttributes(tabTitleAttributes, for: .normal)
+        
         return true
     }
 
